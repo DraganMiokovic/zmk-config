@@ -54,7 +54,7 @@
 // | INSERT|  F1 |  F2 |  F3  |  F4  |  F5  |                         |  F6   |   F7    |   F8    |  F9  |   F10 |  F11  |
 // |   ~   |     |     |  M-RB|  M-RF|      |                         |  HOME |   PG_UP |   PG_DN |  END |       |  F12  |
 // |       |     |     |      |      |      |                         |  <-   |   v     |   ^     |  ->  |       |       |
-// |       |     |     |      |      |      |              |  | CAPS  |  -    |   +     |         |      |       |   \   |
+// |       |     |     |      |      |      |              |  | CAPS  |  +    |   -     |         |      |       |   \   |
 //                     |      |      |      | PRINTSCREEN  |  |       |       |         |         |
 // M-RB = CTRL+ALT+LEFT_ARROW  -> &kp LC(LA(LEFT))  -  Rider-Back
 // M-RF = CTRL+ALT+LEFT_ARROW  -> &kp LC(LA(RIGHT)) -  Rider-Forward
@@ -62,7 +62,7 @@
 &kp INS    &kp F1  &kp F2  &kp F3            &kp F4             &kp F5                                   &kp F6       &kp F7       &kp F8      &kp F9    &kp F10    &kp F11
 &kp TILDE  &trans  &trans  &kp LC(LA(LEFT))  &kp LC(LA(RIGHT))  &trans                                   &kp HOME     &kp PG_UP    &kp PG_DN   &kp END   &trans     &kp F12
 &trans     &trans  &trans  &trans            &trans             &trans                                   &kp LEFT     &kp DOWN     &kp UP      &kp RIGHT &trans     &trans
-&trans     &trans  &trans  &trans            &trans             &trans    &trans            &kp CAPS     &kp KP_MINUS &kp KP_PLUS  &kp EQUAL   &kp LBKT  &kp RBKT   &trans
+&trans     &trans  &trans  &trans            &trans             &trans    &trans            &kp CAPS     &kp KP_PLUS  &kp KP_MINUS &kp EQUAL   &kp LBKT  &kp RBKT   &trans
                            &trans            &trans             &kp LALT  &kp PRINTSCREEN   &trans       &trans       &trans       &trans
 			>;
 
