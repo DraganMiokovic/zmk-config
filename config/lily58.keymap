@@ -68,11 +68,11 @@
 //                      |      |        |           | PRINTSCREEN  |  |       |            |           |        |
 
 			bindings = <
-&kp INS    &kp F1    &kp F2  &kp F3   &kp F4             &kp F5                                            &kp F6           &kp F7           &kp F8      &kp F9    &kp F10    &kp F11
-&kp TILDE  &trans    &trans  &trans   &trans             &trans                                            &kp HOME         &kp PG_UP        &kp PG_DN   &kp END   &trans     &kp F12
-&trans     &trans    &trans  &trans   &kp LC(LA(LEFT))   &kp LC(LA(RIGHT))                                 &kp LEFT         &kp DOWN         &kp UP      &kp RIGHT &trans     &trans
-&trans     &trans    &trans  &trans   &trans             &trans              &trans            &kp CAPS    &kp LC(KP_MINUS) &kp LC(KP_PLUS)  &kp EQUAL   &kp LBKT  &kp RBKT   &trans
-                             &trans   &trans             &kp LALT            &kp PRINTSCREEN   &trans      &trans           &trans           &trans
+&kp INS    &kp F1   &kp F2  &kp F3   &kp F4            &kp F5                                            &kp F6           &kp F7           &kp F8      &kp F9    &kp F10    &kp F11
+&kp TILDE  &trans   &trans  &trans   &trans            &trans                                            &kp HOME         &kp PG_UP        &kp PG_DN   &kp END   &trans     &kp F12
+&trans     &trans   &trans  &trans   &kp LC(LA(LEFT))  &kp LC(LA(RIGHT))                                 &kp LEFT         &kp DOWN         &kp UP      &kp RIGHT &trans     &trans
+&trans     &trans   &trans  &trans   &trans            &trans              &trans            &kp CAPS    &kp LC(KP_MINUS) &kp LC(KP_PLUS)  &kp EQUAL   &kp LBKT  &kp RBKT   &trans
+                            &trans   &trans            &kp LALT            &kp PRINTSCREEN   &trans      &trans           &trans           &trans
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -80,8 +80,10 @@
 
 		rider_layer {
 // RIDER LAYER (3)
-// R-Atach    = CTRL+ALT+F5          -> &kp LC(LA(F5))    -  Rider-Attach to process
-// R-Detach   = CTRL+F2              -> &kp LC(F2)        -  Rider-Stop Attach to process
+// R-Refactor = CTRL+SHIFT+ALT+T     -> &kp LC(LS(LA(T))) -  Rider-Refactor this
+// R-Attach   = CTRL+ALT+F5          -> &kp LC(LA(F5))    -  Rider-Attach to process
+// R-Dettach  = CTRL+F2              -> &kp LC(F2)        -  Rider-Stop Attach to process
+// R-UAttach  = SHIHT+F9             -> &kp LS(F9)        -  Rider-Attach to Unity process
 // R-BACK     = CTRL+ALT+LEFT_ARROW  -> &kp LC(LA(LEFT))  -  Rider-Back
 // R-FORWARD  = CTRL+ALT+LEFT_ARROW  -> &kp LC(LA(RIGHT)) -  Rider-Forward
 // S-OUT      = SHIFT+F8             -> &kp LS(F8)        -  Rider-Step out
@@ -90,19 +92,20 @@
 // R-TO-C     = ALT+F9               -> &kp LA(F9)        -  Rider-Run to cursor
 // R-Colapse  = CTRL+Numpad(-)       -> &kp LC(KP_MINUS)  -  Rider-Colapse code
 // R-Expand   = CTRL+Numpad(+)       -> &kp LC(KP_PLUS)   -  Rider-Expand code
+// R-BrakeP   = CTRL+F8              -> &kp LC(F8)        -  Rider-Toggle brake point
 // ------------------------------------------------------------------------------------------------------------
-// |       |         |          |       |         |           |                           |            |           |         |       |       |       |
-// |       |         | S-OVER   | S-IN  |  S-OUT  | R-TO-C    |                           |  HOME      |  PG_UP    |   PG_DN |  END  |       |       |
-// |       | R-Atach | R-Detach |       |  R-BACK | R-FORWARD |                           |  <-        |  v        |    ^    |   ->  |       |       |
-// |       |         |          |       |         |           |  DEFAULT |     | DEFAULT  |  R-Colapse |  R-Expand |         |       |       |       |  
-//                              |       |         |           |          |     |          |  R-ALT     |           |         |
+// | R-Refactor |           |          |          |         |           |                           |            |           |         |       |       |       |
+// |            |           | S-OVER   | S-IN     |  S-OUT  | R-TO-C    |                           |  HOME      |  PG_UP    |   PG_DN |  END  |       |       |
+// |            | R-UAttach | R-BrakeP | R-Detach |  R-BACK | R-FORWARD |                           |  <-        |  v        |    ^    |   ->  |       |       |
+// |            |           |          |          |         |           |  DEFAULT |     | DEFAULT  |  R-Colapse |  R-Expand |         |       |       |       |  
+//                                     |          |         |           |          |     |          |  R-ALT     |           |         |
 
 			bindings = <
-&trans     &trans            &trans      &trans   &trans            &trans                                         &trans           &trans          &trans      &trans    &trans     &trans
-&trans     &trans            &kp F8      &kp F7   &kp LS(F8)        &kp LA(F9)                                     &kp HOME         &kp PG_UP       &kp PG_DN   &kp END   &trans     &trans
-&trans     &kp LC(LA(F5))    &kp LC(F2)  &trans   &kp LC(LA(LEFT))  &kp LC(LA(RIGHT))                              &kp LEFT         &kp DOWN        &kp UP      &kp RIGHT &trans     &trans
-&trans     &trans            &trans      &trans   &trans            &trans              &to 0       &to 0          &kp LC(KP_MINUS) &kp LC(KP_PLUS) &trans      &trans    &trans     &trans
-                                         &trans   &trans            &trans              &trans      &trans         &kp LALT         &trans          &trans
+&kp LC(LS(LA(T))) &trans            &trans      &trans     &trans            &trans                                         &trans           &trans          &trans      &trans    &trans     &trans
+&trans            &trans            &kp F8      &kp F7     &kp LS(F8)        &kp LA(F9)                                     &kp HOME         &kp PG_UP       &kp PG_DN   &kp END   &trans     &trans
+&trans            &kp LC(LA(F5))    &kp LC(F8)  &kp LS(F9) &kp LC(LA(LEFT))  &kp LC(LA(RIGHT))                              &kp LEFT         &kp DOWN        &kp UP      &kp RIGHT &trans     &trans
+&trans            &trans            &trans      &trans     &trans            &trans              &to 0       &to 0          &kp LC(KP_MINUS) &kp LC(KP_PLUS) &trans      &trans    &trans     &trans
+                                                &trans     &trans            &trans              &trans      &trans         &kp LALT         &trans          &trans
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -121,8 +124,8 @@
 &bt BT_CLR &bt BT_SEL 0     &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_SEL 3 &bt BT_SEL 4                 &trans    &trans    &trans          &trans    &trans    &trans
 &kp F1     &kp F2           &kp F3            &kp F4            &kp F5       &kp F6                       &kp F7    &kp F8    &kp F9          &kp F10   &kp F11   &kp F12
 &kp GRAVE  &kp EXCL         &kp AT            &kp HASH          &kp DOLLAR   &kp PRCNT                    &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR  &kp RPAR  &kp TILDE
-&trans     &ext_power EP_ON &ext_power EP_OFF &ext_power EP_TOG &trans       &trans    &to 0   &to 0    &trans    &kp MINUS &kp KP_PLUS     &kp LBRC  &kp RBRC  &kp PIPE
-                                              &trans            &trans       &trans    &to 0   &to 0    &trans    &trans    &trans
+&trans     &ext_power EP_ON &ext_power EP_OFF &ext_power EP_TOG &trans       &trans    &to 0   &to 0      &trans    &kp MINUS &kp KP_PLUS     &kp LBRC  &kp RBRC  &kp PIPE
+                                              &trans            &trans       &trans    &to 0   &to 0      &trans    &trans    &trans
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
