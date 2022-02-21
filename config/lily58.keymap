@@ -103,7 +103,7 @@
 			bindings = <
 &kp LC(LS(LA(T))) &trans            &trans      &trans     &trans            &trans                                         &trans           &trans          &trans      &trans    &trans     &trans
 &trans            &kp LC(F8)        &kp F8      &kp F7     &kp LS(F8)        &kp LA(F9)                                     &kp HOME         &kp PG_UP       &kp PG_DN   &kp END   &trans     &trans
-&trans            &kp LC(LA(F5))    &kp LC(F8)  &kp LS(F9) &kp LC(LA(LEFT))  &kp LC(LA(RIGHT))                              &kp LEFT         &kp DOWN        &kp UP      &kp RIGHT &trans     &trans
+&trans            &kp LS(F9)        &kp LC(F8)  &kp LS(F9) &kp LC(LA(LEFT))  &kp LC(LA(RIGHT))                              &kp LEFT         &kp DOWN        &kp UP      &kp RIGHT &trans     &trans
 &trans            &trans            &trans      &trans     &trans            &trans              &to 0       &to 0          &kp LC(KP_MINUS) &kp LC(KP_PLUS) &trans      &trans    &trans     &trans
                                                 &trans     &trans            &trans              &trans      &trans         &kp LALT         &trans          &trans
 			>;
