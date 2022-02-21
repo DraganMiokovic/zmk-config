@@ -94,14 +94,14 @@
 // R-Expand   = CTRL+Numpad(+)       -> &kp LC(KP_PLUS)   -  Rider-Expand code
 // R-BrakeP   = CTRL+F8              -> &kp LC(F8)        -  Rider-Toggle brake point
 // ------------------------------------------------------------------------------------------------------------
-// | R-Refactor |           |          |          |         |    R      |                           |            |           |         |       |       |       |
-// |            | R-Brakep  | S-OVER   | S-IN     |  S-OUT  | R-TO-C    |                           |  HOME      |  PG_UP    |   PG_DN |  END  |       |       |
+// | R-Refactor |           |          |          |  Undo   |    R      |                           |            |           |         |       |       |       |
+// |            | R-BrakeP  | S-OVER   | S-IN     |  S-OUT  | R-TO-C    |                           |  HOME      |  PG_UP    |   PG_DN |  END  |       |       |
 // |            | R-UAttach | R-BrakeP | R-Detach |  R-BACK | R-FORWARD |                           |  <-        |  v        |    ^    |   ->  |       |       |
 // |            |           |          |          |         |           |  DEFAULT |     | DEFAULT  |  R-Colapse |  R-Expand |         |       |       |       |  
 //                                     |          |         |           |          |     |          |  R-ALT     |           |         |
 
 			bindings = <
-&kp LC(LS(LA(T))) &trans            &trans      &trans     &trans            &kp R                                          &trans           &trans          &trans      &trans    &trans     &trans
+&kp LC(LS(LA(T))) &trans            &trans      &trans     &kp LC(Z)         &kp LS(R)                                          &trans           &trans          &trans      &trans    &trans     &trans
 &trans            &kp LC(F8)        &kp F8      &kp F7     &kp LS(F8)        &kp LA(F9)                                     &kp HOME         &kp PG_UP       &kp PG_DN   &kp END   &trans     &trans
 &trans            &kp LS(F9)        &kp LC(F8)  &kp LS(F9) &kp LC(LA(LEFT))  &kp LC(LA(RIGHT))                              &kp LEFT         &kp DOWN        &kp UP      &kp RIGHT &trans     &trans
 &trans            &trans            &trans      &trans     &trans            &trans              &to 0       &to 0          &kp LC(KP_MINUS) &kp LC(KP_PLUS) &trans      &trans    &trans     &trans
