@@ -60,11 +60,12 @@
 // R-FORWARD  = CTRL+ALT+LEFT_ARROW  -> &kp LC(LA(RIGHT)) -  Rider-Forward
 // R-Colapse  = CTRL+Numpad(-)       -> &kp LC(KP_MINUS)  -  Rider-Colapse code
 // R-Expand   = CTRL+Numpad(+)       -> &kp LC(KP_PLUS)   -  Rider-Expand code
+// R-Inspect  = CTRL+ALT+SHIFT+A     -> &kp LC(LA(LS(A))) -  Rider-Inspect this
 // ------------------------------------------------------------------------------------------------------------
 // | INSERT|  F1  |  F2 |  F3  |  F4    |  F5       |                         |  F6        |  F7       |  F8    |  F9  |  F10 |  F11  |
 // |   ~   |      |     |      |        |           |                         |  HOME      |  PG_UP    |  PG_DN |  END |      |  F12  |
 // |       |      |     |      | R-BACK | R-FORWARD |                         |  <-        |  v        |  ^     |  ->  |      |       |
-// |       |      |     |      |        |           |              |  | CAPS  |  R-Colapse |  R-Expand |        |      |      |   \   |
+// |       |      |     |      |        | R-Inspect |              |  | CAPS  |  R-Colapse |  R-Expand |        |      |      |   \   |
 //                      |      |        |           | PRINTSCREEN  |  |       |            |           |        |
 
 			bindings = <
