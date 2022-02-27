@@ -72,7 +72,7 @@
 &kp INS    &kp F1   &kp F2  &kp F3   &kp F4            &kp F5                                            &kp F6           &kp F7           &kp F8      &kp F9    &kp F10    &kp F11
 &kp TILDE  &trans   &trans  &trans   &trans            &trans                                            &kp HOME         &kp PG_UP        &kp PG_DN   &kp END   &trans     &kp F12
 &trans     &trans   &trans  &trans   &kp LC(LA(LEFT))  &kp LC(LA(RIGHT))                                 &kp LEFT         &kp DOWN         &kp UP      &kp RIGHT &trans     &trans
-&trans     &trans   &trans  &trans   &trans            &trans              &trans            &kp CAPS    &kp LC(KP_MINUS) &kp LC(KP_PLUS)  &kp EQUAL   &kp LBKT  &kp RBKT   &trans
+&trans     &trans   &trans  &trans   &trans            &kp LC(LA(LS(A)))   &trans            &kp CAPS    &kp LC(KP_MINUS) &kp LC(KP_PLUS)  &kp EQUAL   &kp LBKT  &kp RBKT   &trans
                             &trans   &trans            &kp LALT            &kp PRINTSCREEN   &trans      &trans           &trans           &trans
 			>;
 
