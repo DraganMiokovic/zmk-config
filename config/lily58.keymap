@@ -96,7 +96,7 @@
 // R-BrakeP   = CTRL+F8              -> &kp LC(F8)        -  Rider-Toggle brake point
 // R-Resume   = F9                   -> &kp F9            -  Rider-Resume program
 // ------------------------------------------------------------------------------------------------------------
-// | R-Refactor |           |          |          |  Undo   |    R      |                           |            |           |         |       |       |       |
+// | R-Refactor |     1     |    2     |   3      |  Undo   |    R      |                           |            |           |         |       |       |       |
 // |            | R-Resume  | S-OVER   | S-IN     |  S-OUT  | R-TO-C    |                           |  HOME      |  PG_UP    |   PG_DN |  END  |       |       |
 // |            | R-UAttach | R-BrakeP | R-Detach |  R-BACK | R-FORWARD |                           |  <-        |  v        |    ^    |   ->  |       |       |
 // |            |           |          |          |         |           |  DEFAULT |     | DEFAULT  |  R-Colapse |  R-Expand |         |       |       |       |  
